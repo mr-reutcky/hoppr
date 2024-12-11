@@ -187,7 +187,7 @@ header{
 
 .tiers {
   background-color: #fcfcfc;
-  padding-top: 40px;
+  padding: 40px 0 40px 0;
 
   h3 {
     text-align: center;
@@ -203,6 +203,9 @@ header{
   }
 
   .tier {
+    border: transparent 2px solid;
+    height: 500px;
+    position: relative;
     background-color: #fff;
     border-radius: var(--app-border-rad);
     box-shadow: 0 1px 2px rgba(0 0 0 / 0.1);
@@ -213,20 +216,47 @@ header{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-3px);
       box-shadow: 0 2px 4px rgb(0 0 0 / 0.2);
     }
 
     h4 {
+      text-align: center;
       font-size: 1.8rem;
       margin-bottom: 15px;
-      color: var(--app-main-color);
+      color: #11d59a;
+    }
+
+    img{
+      width: 100%;
+      aspect-ratio: 16/9;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height: 1.6;
-      color: #666;
+      margin-top: 15px;
     }
+
+    .order-now {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--app-main-color);
+      color: var(--app-text-color);
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .order-now:hover {
+      background-color: #aad6c9;
+    }
+  }
+
+  .baller {
+    border:var(--app-main-color) 2px solid;
   }
 }
