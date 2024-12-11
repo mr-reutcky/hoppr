@@ -1,0 +1,16 @@
+{
+  "name": "hoppr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": ["ride", "sharing", "app", "fake", "html", "css", "javascript", "web", "development"],
+  "author": "Samuel Reutcky, Dave Sommerville",
+  "license": "ISC",
+  "description": "A fake ride sharing app",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
