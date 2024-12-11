@@ -55,6 +55,10 @@ header{
       }
     }
   }
+
+  .hamburger-menu {
+    display: none;
+  }
 }
 
 .hero-banner {
@@ -156,6 +160,10 @@ header{
     text-align: center;
   }
 
+  p + p {
+    margin-top: 20px;
+  }
+
   .image-wrapper {
     display: flex;
     justify-content: space-evenly;
@@ -248,7 +256,7 @@ header{
     p {
       font-size: 1.5rem;
       line-height: 1.6;
-      margin-top: 15px;
+      margin: 15px 0 40px 0;
     }
 
     .order-now {
@@ -271,5 +279,131 @@ header{
 
   .baller {
     border:var(--app-main-color) 2px solid;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .hero-banner {
+    height: 300px;
+
+    .title {
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+
+  .hero-banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.4);
+    z-index: 10;
+  }
+
+  #map {
+    width: 100%; 
+    height: 400px; 
+    z-index: 0;
+  }
+
+  .show-location {
+    width: 150px;
+    height: 50px;
+    line-height: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .about-us {
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .image-wrapper {
+      .image {
+        width: calc(50% - 20px);
+      }
+    }
+  }
+
+  .tiers {
+    .tier {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-banner {
+    height: 200px;
+
+    .title {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .hero-button {
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.5rem;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  #map {
+    width: 100%;
+    height: 300px;
+  }
+
+  .show-location {
+    width: 120px;
+    height: 40px;
+    line-height: 25px;
+    font-size: 1.5rem;
+  }
+
+  .about-us {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .tiers {
+    .tier {
+      height: 500px;
+      flex: 1 1 100%;
+    }
+  }
+
+  header {
+    height: auto;
+    line-height: normal;
+
+    nav {
+      display: none;
+    }
+
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      font-size: 2rem;
+      color: var(--app-text-color);
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-menu.active + nav {
+    display: block;
   }
 }
