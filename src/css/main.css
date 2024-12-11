@@ -113,6 +113,22 @@ header{
 	z-index: 10;
 }
 
+#map {
+  width: 600px; 
+  height: 500px; 
+}
+
+.show-location {
+  width: fit-content;
+  height: 40px;
+  border: none; 
+  padding: 5px 15px;
+  text-decoration: none;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+}
+
 .about-us {
   margin: 20px 0 40px 0;
 
