@@ -33,9 +33,15 @@ function getLocation(position) {
     essential: true 
   });
 
-  new mapboxgl.Marker({ color: '#bbe9db' })
-    .setLngLat([longitude, latitude])
-    .addTo(map);
+  if (!userMarker) {
+    // Create the marker only if it doesn't exist
+    userMarker = new mapboxgl.Marker({ color: '#bbe9db' })
+      .setLngLat([longitude, latitude])
+      .addTo(map);
+  } else {
+    // Optionally, update the marker position if it already exists
+    userMarker.setLngLat([longitude, latitude]);
+  }
 }
 
 function errorHandler() {
