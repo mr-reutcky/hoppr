@@ -1,14 +1,8 @@
 'use strict';
 
-function select(selector, scope = document) {
-  return scope.querySelector(selector);
-}
+import { select, listen } from './utils.js';
 
-function listen(event, selector, callback) {
-  return selector.addEventListener(event, callback);
-}
-
-const btn = select('.show-location');
+const btn = select('#order');
 
 let userMarker = null;
 
