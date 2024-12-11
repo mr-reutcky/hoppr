@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+:root {
+  --app-main-color: #bbe9db;
+  --app-secondary-color: #aeccc6;
+  --app-third-color: #9ba6a5;
+  --app-forth-color: #757a79;
+}
+
 .container {
   width: min(100% - 32px, 1200px);
   margin-inline: auto;
