@@ -10,6 +10,8 @@ function listen(event, selector, callback) {
 
 const btn = select('.show-location');
 
+let userMarker = null;
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoia2Vuc2luZHkiLCJhIjoiY2xxMTlqMThjMDNsbjJranc5ZHcwM2RwMyJ9.HTJ_lJrU16bk_u7VUwbz-A';
 const map = new mapboxgl.Map({
   container: 'map', 
