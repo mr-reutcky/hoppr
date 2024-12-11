@@ -129,20 +129,22 @@ header{
 }
 
 #map {
-  width: 900px; 
-  height: 600px; 
+  min-width: 800px; 
+  height: 500px; 
   z-index: 0;
 }
 
 .show-location {
-  width: 200px;
-  height: 60px;
+  height: 40px;
   line-height: 40px;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
   color: var(--app-text-color);
   background-color: var(--app-main-color);
   margin-top: 40px;
+  padding: 10px 30px;
   cursor: pointer;
   border-radius: var(--app-border-rad);
   transition: all 0.25s ease-in-out;
