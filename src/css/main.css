@@ -128,3 +128,101 @@ header{
   font-style: inherit;
   font-size: inherit;
 }
+
+.about-us {
+  margin: 20px 0 40px 0;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    margin: 50px 0;
+  
+    .image {
+      box-shadow: 0 1px 2px rgba(0 0 0 / 0.1);
+      width: calc(25% - 20px);
+      aspect-ratio: 1;
+      padding-top: 20px;
+      border-radius: var(--app-border-rad);
+      display: grid;
+      object-fit: cover;
+      overflow: hidden;
+      user-select: none;
+    } 
+  
+    .image-01 {
+      background: url("../img/image-01.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  
+    .image-02 {
+      background: url("../img/image-02.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  
+    .image-03 {
+      background: url("../img/image-03.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  
+    .image-04 {
+      background: url("../img/image-04.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  }
+}
+
+.tiers {
+  background-color: #fcfcfc;
+  padding-top: 40px;
+
+  h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .tier-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tier {
+    background-color: #fff;
+    border-radius: var(--app-border-rad);
+    box-shadow: 0 1px 2px rgba(0 0 0 / 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 2px 4px rgb(0 0 0 / 0.2);
+    }
+
+    h4 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: var(--app-main-color);
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #666;
+    }
+  }
+}
