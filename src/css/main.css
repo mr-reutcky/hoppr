@@ -271,6 +271,7 @@ header{
 
     .order-now {
       position: absolute;
+      text-decoration: none;
       bottom: 20px;
       right: 20px;
       background-color: var(--app-main-color);
