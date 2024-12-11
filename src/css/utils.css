@@ -5,6 +5,7 @@
   --app-secondary-color: #aeccc6;
   --app-third-color: #9ba6a5;
   --app-forth-color: #757a79;
+  --app-border-rad: 5px;
 }
 
 .container {
