@@ -338,11 +338,16 @@ header{
   .tiers {
     .tier {
       flex: 1 1 calc(50% - 20px);
+
+      .baller-image {
+        width: 75%;
+        margin-left: 15%;
+      }
     }
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .hero-banner {
     height: 200px;
 
@@ -386,12 +391,17 @@ header{
     .tier {
       height: 500px;
       flex: 1 1 100%;
+
+      .baller-image {
+        width: 100%;
+        margin-left: 0;
+      }
     }
   }
 
   header {
-    height: auto;
-    line-height: normal;
+    height: 50px;
+    line-height: 50px;
 
     nav {
       display: none;
