@@ -15,3 +15,7 @@
 .flex {
   display: flex;
 }
+
+.flex-between {
+  justify-content: space-between;
+}
