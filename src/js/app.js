@@ -31,7 +31,7 @@ function getLocation(position) {
     essential: true 
   });
 
-  new mapboxgl.Marker()
+  new mapboxgl.Marker({ color: '#bbe9db' })
     .setLngLat([longitude, latitude])
     .addTo(map);
 }

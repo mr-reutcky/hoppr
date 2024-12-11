@@ -20,3 +20,7 @@
 .flex-between {
   justify-content: space-between;
 }
+
+.f-col {
+  flex-direction: column;
+}

@@ -6,7 +6,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server"
   },
-  "keywords": ["ride", "sharing", "app", "fake", "html", "css", "javascript", "web", "development"],
+  "keywords": [
+    "ride",
+    "sharing",
+    "app",
+    "fake",
+    "html",
+    "css",
+    "javascript",
+    "web",
+    "development"
+  ],
   "author": "Samuel Reutcky, Dave Sommerville",
   "license": "ISC",
   "description": "A fake ride sharing app",
