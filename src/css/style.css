@@ -2,3 +2,47 @@
 
 @import url(./utils.css);
 
+header{
+  background-color: var(--app-main-color);
+  height: 65px;
+  line-height: 65px;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--app-forth-color);
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+
+      li {
+        a {
+          color: var(--app-forth-color);
+          text-decoration: none;
+          padding: 0 10px;
+          position: relative;
+        }
+
+        a::after {
+          content: "";
+          position: absolute;
+          width: 0%; 
+          height: 2px;
+          background-color: var(--app-gold-color);
+          bottom: -1px;
+          left: 0;
+          transition: all 0.25s ease-in-out;
+        }
+        
+        a:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
