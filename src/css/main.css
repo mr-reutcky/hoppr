@@ -79,6 +79,10 @@ header{
     flex-direction: column;
     z-index: 500;
     text-align: center;
+
+    a {
+      text-decoration: none;
+    }
   
     h1 {
       font-size: 8rem;
