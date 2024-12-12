@@ -428,3 +428,51 @@ header{
     display: block;
   }
 }
+
+footer {
+  background-color: var(--app-main-color);
+  padding: 20px 0;
+  color: var(--app-text-color);
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  .social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-left: 15px;
+
+      a {
+        color: var(--app-text-color);
+        text-decoration: none;
+        position: relative;
+
+        i {
+          font-size: 2rem;
+        }
+      }
+
+      a:hover {
+        scale: 1.01;
+        color: #073a2b;
+      }
+
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}
